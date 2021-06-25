@@ -16,12 +16,17 @@ resource "aws_db_instance" "db_cluster" {
   vpc_security_group_ids  = [ var.vpc_security_group_ids]
   skip_final_snapshot       = true
   final_snapshot_identifier = "Ignore"
+  
+  #depends_on = [
+  #   aws_db_subnet_group.db_subnet,]
 
 
 
- /*output "rds_endpoint" {
+ /*
+ output "rds_endpoint" {
   value = "${aws_db_instance.db_cluster.endpoint}" 
- }*/
+ }
+ */
 
 }
 

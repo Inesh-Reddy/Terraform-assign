@@ -6,6 +6,6 @@ db_port: 5432
 db_user: database_user
 pgpassfile: /tmp/.pgpass 
 EOF
-filename = "./ansible-scripts/vars/main.yml"
+filename = "../Ansible/vars/main.yml"
 
 }

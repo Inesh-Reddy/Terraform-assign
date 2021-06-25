@@ -4,7 +4,8 @@ resource "aws_instance" "public_ec2" {
     instance_type = var.instance_type
     subnet_id     = "${element(var.public_ids, count.index)}"
 
-    key_name      = "inesh-sre-assign"
+    key_name      = "inesh-sre-assign" 
+    # key created in the ec2->security for ssh connection
     vpc_security_group_ids = [ var.vpc_security_group_ids ]    
     associate_public_ip_address = true
 

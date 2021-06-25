@@ -5,6 +5,7 @@ variable "public_ids"{}
 variable "vpc_security_group_ids" {}
 
 
+
 # EC2 Variables
 
 variable "instance_id" {

@@ -30,3 +30,12 @@ output "security_groups_ids" {
 output "public_route_table" {
   value = "${aws_route_table.public.id}"
 }
+
+
+output "db_subnet_group_name"{
+  value = "${aws_db_subnet_group.rds_db_subnet.name}"
+}
+
+output "db_subnet_group_id"{
+  value = "${aws_db_subnet_group.rds_db_subnet.id}"
+}

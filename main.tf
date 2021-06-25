@@ -23,8 +23,9 @@ module "create-server" {
 
 module "create-database" {
   source = "./modules/create-db"
-  db_subnet_group_name = module.networking.output_rds_db_subnet_ids
+  db_subnet_group_name = module.networking.db_subnet_group_name
   vpc_security_group_ids = module.networking.default_sg_pri_id
+  #aws_db_subnet_group = module.network.db_subnet_group_id
   
 
 
